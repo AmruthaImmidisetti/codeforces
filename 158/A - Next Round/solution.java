@@ -1,1 +1,22 @@
-import java.util.*;public class Main{    public static void main(String[] args){        Scanner sc=new Scanner(System.in);        int n=sc.nextInt();        int k=sc.nextInt();        int[] arr= new int[n];        for(int i=0;i<n;i++) arr[i]=sc.nextInt();        int kth=arr[k-1], c=0;        for(int i=0;i<n;i++){            if(arr[i]>=kth && arr[i]>=1) c++;        }        System.out.println(c);    }}
+import java.util.*;
+import java.io.*;
+
+public class codeForces{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        int t;
+        t = sc.nextInt();
+        while(t>0){
+            int a, b, c;
+            a = sc.nextInt();
+            b = sc.nextInt();
+            c = sc.nextInt();
+            if(a+b == c || b+c == a || c+a == b){
+                System.out.println("YES");
+            }
+            else System.out.println("NO");
+            t--;
+        }
+        sc.close();
+    }
+}
