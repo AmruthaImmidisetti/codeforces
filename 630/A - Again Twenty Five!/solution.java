@@ -1,0 +1,1 @@
+import java.util.*;import java.lang.*;import java.io.*; public class Power{	public static void main (String[] args) throws java.lang.Exception	{        Scanner sc = new Scanner(System.in);        long n = sc.nextLong();        if(n == 1) System.out.println(05);        else System.out.println(25);	}}
