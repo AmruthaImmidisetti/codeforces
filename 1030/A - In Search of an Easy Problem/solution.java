@@ -1,1 +1,23 @@
-import java.util.*;import java.lang.*;import java.io.*; public class Search{	public static void main (String[] args) throws java.lang.Exception	{	    Scanner sc = new Scanner(System.in);		int n;		n = sc.nextInt();		int[] arr = new int[n];		for(int i = 0; i < n; i++) {		    arr[i] = sc.nextInt();		}		Arrays.sort(arr);		if(Arrays.binarySearch(arr, 1) >= 0) System.out.println("HARD");		else System.out.println("EASY");	}}
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+public class Search {
+    public static void main(String[] args) throws java.lang.Exception {
+        Scanner sc = new Scanner(System.in);
+
+        int n = sc.nextInt();
+        int[] arr = new int[n];
+
+        for (int i = 0; i < n; i++) {
+            arr[i] = sc.nextInt();
+        }
+
+        Arrays.sort(arr);
+
+        if (Arrays.binarySearch(arr, 1) >= 0)
+            System.out.println("HARD");
+        else
+            System.out.println("EASY");
+    }
+}
